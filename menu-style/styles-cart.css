@@ -1,0 +1,136 @@
+.cart-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 1px solid #ffb95f;
+    box-shadow: 1px 1px 20px #ffb95f;
+}
+
+/*CART title*/
+.container-title {
+    text-align:center;
+    font-size:1.6em;
+   
+    
+    /*background:beige;*/
+}
+
+.header {
+    width: 30%;
+    border-bottom: 2px solid #EB5757;
+    padding-bottom: 5px;
+    margin: 20px auto 20px auto;
+}
+/*individual row*/
+.cart-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    /*padding:10px;*/
+
+    /*background:grey;*/
+
+}
+.cart-column{
+    display:flex;
+    flex-direction:row;
+    margin-bottom:10px;
+    padding:10px;
+    
+    align-items:center;
+    
+
+}
+.cart-item,.cart-quantity{
+    flex:2;
+    border-bottom: 2px solid #EB5757;
+    margin:0 10px 10px 10px;
+}
+.cart-price {
+    flex: 1;
+    border-bottom: 2px solid #EB5757;
+    margin: 0 10px 10px 10px;
+}
+.cart-item img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    object-position:center;
+    margin:0 15px 0 0;
+}
+.cart-item-title {
+    margin: auto 0 auto 0;
+    padding: 5px;
+    font-size: 1.1em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.cart-quantity-input{
+    width:40px;
+    height:30px;
+    border-radius:5px;
+    margin-right:50px;
+    padding:0px;
+    font-size:1.2em;
+}
+.remove {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    width: 50%;
+    height: 35px;
+    padding: .67em .67em;
+    cursor:pointer;
+}
+
+.cart-total {
+    margin: 10px auto;
+   text-align:end;
+    /*font-weight:300;*/
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.cart-total-title{
+    margin-right:10px;
+}
+.cart-total-price{
+    margin-right:10px;
+}
+
+.btn-purchase {
+    margin: 10px auto;
+    width: 30%;
+    height: 30px;
+    padding: 1px;
+    background-color: #EB5757;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    cursor:pointer;
+}
+    .btn-purchase:hover, .remove:hover {
+        background-color: white;
+        color: #EB5757;
+        border: 2px solid #EB5757;
+    }
+.cart-container {
+    background-image: linear-gradient(to right,#ffb04e,#f4d7a4)
+}
+
+.titles {
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.price {
+    font-size: 1.1em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width:900px) {
+    .cart-container{
+        width: 650px;
+    }
+}
